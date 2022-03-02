@@ -1,0 +1,16 @@
+<svg id="icon_chat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_24367" data-name="사각형 24367" width="33.525" height="32.496" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_24365" data-name="사각형 24365" width="64" height="64" rx="32" fill="none"/>
+  <g id="그룹_19584" data-name="그룹 19584" transform="translate(15.237 13.752)">
+    <g id="그룹_19583" data-name="그룹 19583" clip-path="url(#clip-path)">
+      <path id="패스_8496" data-name="패스 8496" d="M33.4,29.915l-2.7-6.274a16.262,16.262,0,1,0-5.146,5.911l5.9,2.355A1.506,1.506,0,0,0,33.4,29.915" fill="#fbffff"/>
+      <path id="패스_8497" data-name="패스 8497" d="M12.474,13.4a1.523,1.523,0,1,1-1.523-1.523A1.524,1.524,0,0,1,12.474,13.4" transform="translate(0.146 0.184)" fill="#60be88"/>
+      <path id="패스_8498" data-name="패스 8498" d="M21.87,13.4a1.523,1.523,0,1,1-1.523-1.523A1.524,1.524,0,0,1,21.87,13.4" transform="translate(0.292 0.184)" fill="#60be88"/>
+      <path id="패스_8499" data-name="패스 8499" d="M15.7,22.8a4.63,4.63,0,0,1-4.625-4.625,1.016,1.016,0,0,1,2.031,0,2.593,2.593,0,1,0,5.186,0,1.016,1.016,0,0,1,2.031,0A4.629,4.629,0,0,1,15.7,22.8" transform="translate(0.172 0.266)" fill="#60be88"/>
+    </g>
+  </g>
+</svg>

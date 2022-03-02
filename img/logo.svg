@@ -1,0 +1,10 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60">
+  <rect id="logo-bg" width="64" height="60" fill="none"/>
+  <g id="logo_wrap" transform="translate(6725 -1635)">
+    <g id="logo-2" data-name="logo" transform="translate(-8227.627 1334.9)">
+      <circle id="타원_117" data-name="타원 117" cx="14" cy="14" r="14" transform="translate(1509.627 306.1)" fill="#485f6e"/>
+      <path id="패스_7875" data-name="패스 7875" d="M1591.81,324.1a14,14,0,1,0-14,14A14,14,0,0,0,1591.81,324.1Zm-21,0a7,7,0,1,1,7,7A7,7,0,0,1,1570.81,324.1Z" transform="translate(-32.182 -4)" fill="#00eb9a"/>
+    </g>
+    <text id="따릉이" transform="translate(-6693 1686)" fill="#2e3248" font-size="14" font-family="NanumGothicLight, NanumGothic"><tspan x="-19.74" y="0">따릉이</tspan></text>
+  </g>
+</svg>

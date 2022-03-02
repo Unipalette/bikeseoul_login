@@ -1,0 +1,474 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #212121;
+  --color-black-blue: #2e3248;
+  --color-gray-light: #efefef;
+  --color-gray: #b5b5b5;
+  --color-gray-dark: #767676;
+  --color-gray-blue: #bcc6cb;
+  --color-primary: #60be88;
+}
+.sub2_container {
+  margin-top: 8rem;
+  display: flex;
+}
+.left-side {
+  box-sizing: border-box;
+  width: 37rem;
+  height: 97rem;
+  background: #485f6e;
+  padding: 0 2rem;
+}
+.left-side .con1-weather {
+  margin-top: 3rem;
+}
+.left-side .con1-weather .loca {
+  display: flex;
+  align-items: center;
+}
+
+.left-side .con1-weather .loca .icon-loca-line {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+  background: url("../sub2_img/icon-loca-line.svg") center center;
+  background-size: cover;
+}
+.left-side .con1-weather .loca-txt {
+  font-size: 1.4rem;
+  color: var(--color-white);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.left-side .con1-weather .weather-info {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-side .con1-weather .weather-info .icon-weather {
+  width: 8rem;
+  height: 8rem;
+  background: url("../sub2_img/icon-cloudy.svg") center center;
+  background-size: cover;
+}
+.left-side .con1-weather .weather-info .temp-txt {
+  font-size: 4.8rem;
+  font-weight: 900;
+  color: var(--color-white);
+  margin-left: -2rem;
+  line-height: 8rem;
+  text-shadow: 0.2rem 0.2rem 0.6rem rgba(46, 50, 72, 0.4);
+}
+.left-side .con1-weather .weather-info2 {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--color-white);
+  font-weight: 400;
+}
+.left-side .con1-weather .weather-info2 .cloud {
+  margin-left: 1.6rem;
+  position: relative;
+}
+.left-side .con1-weather .weather-info2 .cloud::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--color-white);
+  opacity: 0.8;
+  left: -1rem;
+  content: "";
+  border-radius: 50%;
+}
+.left-side .con1-weather .weather-refe {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  font-size: 400;
+  text-align: right;
+}
+.left-side .con2-tab_menu {
+  display: flex;
+  margin-top: 2.5rem;
+}
+.left-side .con2-tab_menu .tab-btn {
+  width: 16.5rem;
+  height: 5.2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--color-white);
+  font-weight: 400;
+}
+.left-side .con2-tab_menu .tab-btn {
+  cursor: pointer;
+}
+.left-side .con2-tab_menu .tab-btn:first-child {
+  background: #3ccb79;
+  font-weight: 700;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+.left-side .con2-tab_menu .tab-btn:last-child {
+  border: 0.1rem solid var(--color-white);
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+.left-side .con3-search {
+  background: var(--color-white);
+  padding: 0 1.8rem;
+  margin-top: 2.2rem;
+  height: 4.5rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+.left-side .con3-search .icon-search {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("../sub2_img/icon-search.svg") center center;
+  background-size: cover;
+  display: inline-block;
+}
+
+.left-side .con3-search .input-search {
+  margin-left: 0.5rem;
+  width: 100%;
+  color: var(--color-black);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.left-side .con3-search .input-search::placeholder {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #999;
+}
+.left-side .con4-station_list {
+  margin-top: 2rem;
+}
+
+.left-side .con4-station_list .con4-tab_menu {
+  position: relative;
+  display: flex;
+}
+.left-side .con4-station_list .con4-tab_menu::before {
+  width: 37rem;
+  height: 0.1rem;
+  background: var(--color-white);
+  position: absolute;
+  content: "";
+  left: -2rem;
+  bottom: 0;
+  opacity: 0.22;
+}
+.left-side .con4-station_list .con4-tab_menu .con4-menu_li {
+  font-size: 1.4rem;
+  line-height: 4rem;
+  color: var(--color-white);
+  font-weight: 400;
+}
+.left-side .con4-station_list .con4-tab_menu .con4-menu_li_select {
+  font-weight: 700;
+  position: relative;
+}
+.left-side .con4-station_list .con4-tab_menu .con4-menu_li_select::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  background: var(--color-white);
+  left: 0;
+  bottom: 0;
+}
+.left-side .con4-station_list .con4-tab_menu .con4-menu_li:last-child {
+  margin-left: 2rem;
+}
+
+.left-side .con4-station_list .con4-art {
+  background: var(--color-white);
+  border-radius: 0.4rem;
+  padding: 1rem 1.4rem 2rem 1.4rem;
+  margin-top: 1.2rem;
+  box-sizing: border-box;
+  border: 0.1rem solid #ececec;
+  transition: all 0.3s;
+}
+.left-side .con4-station_list .con4-art:hover {
+  border: 0.1rem solid var(--color-primary);
+}
+.left-side .con4-station_list .con4-art .top-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-side .con4-station_list .con4-art .top-area .station-tit {
+  display: flex;
+  align-items: center;
+}
+.left-side .con4-station_list .con4-art .top-area .station-tit .icon-round {
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+.left-side .con4-station_list .con4-art .top-area .station-tit .station-name {
+  font-size: 1.4rem;
+  color: var(--color-black);
+  font-weight: 400;
+  margin-left: 0.4rem;
+}
+.left-side .con4-station_list .con4-art1 {
+  margin-top: 2rem;
+}
+.left-side .con4-station_list .con4-art .top-area .btn-wrap {
+  display: flex;
+}
+.left-side .con4-station_list .con4-art .top-area .btn-wrap .icon-star {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("../sub2_img/icon-star.svg") center center;
+  background-size: cover;
+  cursor: pointer;
+}
+.left-side .con4-station_list .con4-art .top-area .btn-wrap .icon-loca {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("../sub2_img/icon-loca.svg") center center;
+  background-size: cover;
+  cursor: pointer;
+}
+.left-side .con4-station_list .con4-art .station-info_wrap {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.left-side .con4-station_list .con4-art .station-info_wrap .station-info {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-side
+  .con4-station_list
+  .con4-art
+  .station-info_wrap
+  .station-info
+  .station-tit {
+}
+.left-side
+  .con4-station_list
+  .con4-art
+  .station-info_wrap
+  .station-info
+  .station-tit
+  .icon-station {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 auto;
+}
+.left-side
+  .con4-station_list
+  .con4-art
+  .station-info_wrap
+  .station-info
+  .station-tit
+  .station-name {
+  margin-top: 0.6rem;
+  font-size: 1.2rem;
+  color: #999;
+  font-weight: 400;
+  text-align: center;
+}
+.left-side
+  .con4-station_list
+  .con4-art
+  .station-info_wrap
+  .station-info
+  .station-current {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6f7ed;
+  margin-left: 1.4rem;
+}
+.left-side .con4-station_list .con4-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.3rem;
+}
+.left-side .con4-station_list .con4-pagination .dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--color-white);
+  opacity: 0.7;
+  margin-left: 0.6rem;
+}
+.left-side .con4-station_list .con4-pagination .dot:first-child {
+  margin-left: 0;
+}
+
+.right-side {
+  position: relative;
+  width: calc(100% - 33rem);
+  background: url("../sub2_img/map_bg.jpg") center center;
+  background-size: cover;
+}
+.right-side .bnr {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 42.8rem;
+  padding: 2.4rem;
+  background: var(--color-white);
+  border-radius: 0.4rem;
+  box-shadow: 1rem 1rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.right-side .bnr .tit {
+  font-size: 1.8rem;
+  color: var(--color-black-blue);
+}
+
+.right-side .bnr .txt {
+  margin-top: 0.4rem;
+  font-size: 1.4rem;
+  color: var(--color-black-blue);
+}
+.right-side .bnr .survey-link {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  position: relative;
+  display: inline-block;
+}
+.right-side .bnr .survey-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background: var(--color-black-blue);
+}
+.right-side .bnr .btn-close {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  cursor: pointer;
+  background: url("../sub2_img/icon-cloase_btn.svg") center center;
+  background-size: cover;
+}
+.right-side .guide-link {
+  position: absolute;
+  left: 4rem;
+  bottom: 4rem;
+  background: var(--color-white);
+  border: 0.1rem solid #ececec;
+  color: var(--color-black-blue);
+  font-size: 1.6rem;
+  height: 4.6rem;
+  width: 13.5rem;
+  text-align: center;
+  border-radius: 2.3rem;
+  font-size: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-side .guide-link .min-logo {
+  display: block;
+  width: 3.4rem;
+  height: 1.9rem;
+  background: url("../sub2_img/min-logo.svg") center center;
+  background-size: cover;
+}
+.right-side .guide-link p {
+  margin-left: 0.4rem;
+}
+.right-side .btn-map {
+  position: absolute;
+  right: 4rem;
+  width: 5.4rem;
+  height: 5.4rem;
+  border-radius: 50%;
+  border: 0.1rem solid #ececec;
+  background: var(--color-white);
+  display: block;
+  cursor: pointer;
+}
+.right-side .btn-reload {
+  bottom: 4rem;
+}
+.right-side .btn-gps {
+  bottom: 10.5rem;
+}
+.right-side .btn-map .icon-gps {
+  display: block;
+  background: url("../sub2_img/icon-gps.svg") center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.right-side .btn-map .icon-reload {
+  display: block;
+  background: url("../sub2_img/icon-reload.svg") center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.right-side .icon-count {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgba(46, 204, 113, 0.9);
+  border: 0.1rem solid #3a915f;
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  line-height: 4rem;
+  cursor: pointer;
+  letter-spacing: 0;
+  transition: all 0.2s;
+}
+.right-side .icon-count:hover {
+  opacity: 0.8;
+}
+.right-side .icon-count1 {
+  top: 30.2rem;
+  right: 27.3rem;
+}
+.right-side .icon-count2 {
+  top: 20.3rem;
+  right: 60rem;
+}
+.right-side .icon-count3 {
+  top: 65.7rem;
+  right: 58rem;
+}
+.right-side .icon-count4 {
+  top: 39.4rem;
+  right: 67.8rem;
+}
+.right-side .icon-count5 {
+  top: 63.6rem;
+  right: 29.4rem;
+}
+.right-side .icon-count6 {
+  top: 80.5rem;
+  right: 11rem;
+}

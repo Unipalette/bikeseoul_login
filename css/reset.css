@@ -1,0 +1,381 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+/* 공통 스타일 */
+:root {
+  --color-white: #ffffff;
+  --color-black: #212121;
+  --color-black-blue: #2e3248;
+  --color-gray-light: #efefef;
+  --color-gray: #b5b5b5;
+  --color-gray-dark: #767676;
+  --color-gray-blue: #bcc6cb;
+  --color-primary: #60be88;
+}
+/* 공통 스타일 */
+.txt_bold {
+  font-weight: 700;
+}
+.txt_primary_color {
+  color: var(--color-primary);
+}
+.con_tit {
+  font-size: 2.4rem;
+  color: var(--color-black-blue);
+  letter-spacing: -0.192rem;
+}
+.rotate180 {
+  transform: rotate(180deg);
+}
+/* 헤더 */
+.hdr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 8rem;
+  background: var(--color-white);
+  border-bottom: 0.1rem solid var(--color-gray-light);
+  z-index: 9999;
+}
+.hdr .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 헤더 - 왼쪽 영역 */
+.hdr .container .left_side {
+  display: flex;
+  align-items: center;
+}
+.hdr .container .left_side .logo {
+  width: 6.4rem;
+  height: 6rem;
+}
+.hdr .container .left_side .logo .logo_link {
+}
+.hdr .container .left_side .logo .logo_link .logo_img {
+}
+.hdr .container .left_side .gnb {
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+}
+.hdr .container .left_side .gnb .gnb_li {
+  position: relative;
+  margin-left: 0.2rem;
+}
+.hdr .container .left_side .gnb .gnb_li:hover .gnb_link {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.hdr .container .left_side .gnb .gnb_li::before {
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  content: "";
+  bottom: 0.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  transition: all 0.2s;
+}
+.hdr .container .left_side .gnb .gnb_li:hover::before {
+  width: 80%;
+}
+.hdr .container .left_side .gnb .gnb_li .gnb_link {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 8rem;
+  padding: 0 1.2rem;
+  transition: all 0.2s;
+  text-align: center;
+}
+.hdr .container .left_side .gnb .more_btn {
+  position: relative;
+  margin-left: 0.4rem;
+  font-size: 1.6rem;
+  line-height: 8rem;
+  color: var(--color-gray-dark);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.hdr .container .left_side .gnb .more_btn:hover {
+  color: var(--color-primary);
+}
+.hdr .container .left_side .gnb .more_btn::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.1rem;
+  width: 0.1rem;
+  height: 1rem;
+  background: var(--color-gray-blue);
+}
+.hdr .container .left_side .gnb .more_btn .more_btn_wrap {
+  display: flex;
+  padding: 0 1.8rem;
+  align-items: center;
+}
+.hdr .container .left_side .gnb .more_btn .icon_arrow_s {
+  margin-left: 0.4rem;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("../icon/icon_arrow_s.svg") center center;
+  background-size: cover;
+  transition: all 0.2s;
+}
+.hdr .container .left_side .gnb .more_btn .more_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 16.5rem;
+  border: 0.1rem solid var(--color-gray-light);
+  padding: 1.5rem 0;
+  background: var(--color-white);
+  display: none;
+}
+.hdr .container .left_side .gnb .more_btn .more_menu_show {
+  display: block;
+}
+.hdr .container .left_side .gnb .more_btn .more_menu .menu_li {
+  padding: 0 2rem;
+}
+.hdr .container .left_side .gnb .more_btn .more_menu .menu_li:hover .menu_link {
+  color: var(--color-primary);
+}
+.hdr .container .left_side .gnb .more_btn .more_menu .menu_li .menu_link {
+  font-size: 1.4rem;
+  line-height: 3.4rem;
+  font-weight: 500;
+  color: var(--color-black-blue);
+  transition: all 0.2s;
+}
+/* 헤더 - 오른쪽 영역 */
+
+.hdr .container {
+}
+.hdr .container .right_side {
+  display: flex;
+  align-items: center;
+}
+.hdr .container .right_side .mypage_link {
+  width: 12rem;
+  height: 4rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.6rem;
+  line-height: 4rem;
+  text-align: center;
+  border-radius: 2rem;
+  transition: all 0.2s;
+}
+.hdr .container .right_side .mypage_link:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 1rem rgba(96, 190, 136, 0.4);
+  font-weight: 400;
+}
+.hdr .container .right_side .login_wrap {
+  margin-left: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+.hdr .container .right_side .login_wrap .login_link {
+  font-size: 1.6rem;
+  line-height: 4rem;
+  color: var(--color-gray-dark);
+  transition: all 0.2s;
+}
+.hdr .container .right_side .login_wrap .login_link:hover {
+  /* color: var(--color-primary); */
+  font-weight: 400;
+}
+.hdr .container .right_side .login_wrap .login_link:last-child {
+  position: relative;
+  margin-left: 2.5rem;
+}
+.hdr .container .right_side .login_wrap .login_link:last-child::before {
+  width: 0.1rem;
+  height: 1rem;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1.2rem;
+  background: var(--color-gray-blue);
+}
+.hdr .container .right_side .search_btn {
+  position: relative;
+  margin-left: 2rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  background: rgba(96, 190, 136, 0);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.hdr .container .right_side .search_btn .icon_search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("../icon/icon_search.svg") center center;
+  background-size: cover;
+  transition: all 0.2s;
+}
+.hdr .container .right_side .search_btn:hover {
+  background: rgba(96, 190, 136, 0.06);
+}
+.hdr .container .right_side .search_btn:hover .icon_search {
+  background: url("../icon/icon_search_hover.svg") center center;
+  background-size: cover;
+}
+
+/* rem 사이즈 조정 */
+html {
+  font-size: 62.5%;
+}
+/* 전체 컬러 설정 */
+body {
+  font-family: "Pretendard";
+  letter-spacing: -0.064rem;
+  font-weight: 200;
+  color: var(--color-black-blue);
+  background: #fafafa;
+  overflow-x: hidden;
+}
+/* 컨테이너 */
+
+.container {
+  box-sizing: border-box;
+  width: 124rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+/* 폰트 초기화 */
+body,
+input,
+textarea,
+select,
+button,
+table {
+  font-family: "Pretendard", "AppleSDGothicNeo-Regular", "Malgun Gothic",
+    "맑은 고딕", "dotum", "돋움", "sans-serif";
+}
+
+/* 여백 초기화 & 박스사이징 보더박스 설정*/
+body,
+div,
+ul,
+li,
+dl,
+dd,
+dt,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+fieldset,
+legend,
+p,
+select,
+table,
+th,
+td,
+tr,
+textarea,
+button,
+form,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* a 초기화 */
+a {
+  display: block;
+  color: var(--color-black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 어드레스 스타일 초기화 */
+address {
+  font-style: normal;
+}
+/* 블릿기호 초기화 */
+ul,
+li {
+  list-style: none;
+}
+/* 제목 태그 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 14px;
+  font-weight: normal;
+}
+/* 이미지 태그 초기화 */
+img {
+  display: block;
+}
+/* 버튼  초기화 */
+button {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+/* 인풋창 초기화 */
+input {
+  outline: none;
+  border: none;
+}
+/* 셀렉트 초기화 */
+select {
+  border: none;
+}
+/* IR 효과 */
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+/* 반응형 */
+video,
+img {
+  width: 100%;
+}
